@@ -26,7 +26,7 @@ jobs:
           # email subject
           subject: ${{github.job}} job of ${{github.repository}} has ${{job.status}}
           # email body as text
-          html_body: ${{github.job}} job in worflow ${{github.workflow}} of ${{github.repository}} has ${{job.status}} 
+          body: ${{github.job}} job in worflow ${{github.workflow}} of ${{github.repository}} has ${{job.status}} \n\n Message: ${{github.event.head_commit.message}}
           # comma-separated string, send email to
           to: ede@itmr.de
           # from email name
